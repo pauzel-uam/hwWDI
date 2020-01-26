@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE sklep [
+<!ELEMENT sklep (dzial+)>
+<!ELEMENT dzial (polka+)>
+<!ELEMENT polka (produkt+)>
+<!ELEMENT produkt (nazwa, cena)>
+<!ELEMENT nazwa (#PCDATA)>
+<!ELEMENT cena (#PCDATA)>
+<!ATTLIST dzial domain CDATA "Art. Spozywcze">
+<!ATTLIST dzial domain CDATA "Art. Papiernicze">
+<!ATTLIST dzial domain CDATA "Odziez">
+<!ATTLIST polka domain CDATA "Owoce i Warzywa">
+<!ATTLIST polka domain CDATA "Nabial">
+<!ATTLIST polka domain CDATA "Zeszyty">
+<!ATTLIST polka domain CDATA "Przybory szkolne">
+<!ATTLIST polka domain CDATA "Odziez dziecieca">
+<!ATTLIST polka domain CDATA "Obuwie">
+]>
+
+<sklep>
+    <dzial domain = "Art. Spozywcze">
+        <polka domain ="Owoce i Warzywa">
+            <produkt>
+                <nazwa> Jablka </nazwa>
+                <cena> 3.50zl/kg </cena>
+            </produkt>
+            <produkt>
+                <nazwa> Kiwi </nazwa>
+                <cena> 5.99zl/op </cena>
+            </produkt>
+            <produkt>
+                <nazwa> Cukinia </nazwa>
+                <cena> 3.99zl/kg </cena>
+            </produkt>
+        </polka>
+
+        <polka domain ="Nabial">
+            <produkt>
+                <nazwa> Mleko </nazwa>
+                <cena> 2.10zl </cena>
+            </produkt>
+            <produkt>
+                <nazwa> Serek wiejski </nazwa>
+                <cena> 1.50zl </cena>
+            </produkt>
+            <produkt>
+                <nazwa> Maslo </nazwa>
+                <cena> 3.99zl </cena>
+            </produkt>
+        </polka>
+
+    </dzial>
+
+    <dzial domain = "Art. Papiernicze">
+        <polka domain = "Zeszyty">
+            <produkt>
+                <nazwa> Zeszyt A5 60k </nazwa>
+                <cena> 1.99zl </cena>
+            </produkt>
+            <produkt>
+                <nazwa> Brulion B5 120k </nazwa>
+                <cena> 12.99zl </cena>
+            </produkt>
+        </polka>
+
+        <polka domain = "Przybory szkolne">
+            <produkt>
+                <nazwa> Plecak </nazwa>
+                <cena> 49.90zl </cena>
+            </produkt>
+            <produkt>
+                <nazwa> Piornik </nazwa>
+                <cena> 24.99zl </cena>
+            </produkt>
+        </polka>
+
+    </dzial>
+
+    <dzial domain = "Odziez">
+        <polka domain="Odziez dziecieca">
+            <produkt>
+                <nazwa> Body </nazwa>
+                <cena> 15.99zl </cena>
+            </produkt>
+            <produkt>
+                <nazwa> Bluza z kapturem </nazwa>
+                <cena> 25.99zl </cena>
+            </produkt>
+            <produkt>
+                <nazwa> Jeansy </nazwa>
+                <cena> 30.99zl </cena>
+            </produkt>
+        </polka>
+        <polka domain="Obuwie">
+            <produkt>
+                <nazwa> Trampki </nazwa>
+                <cena> 35.99zl </cena>
+            </produkt>
+            <produkt>
+                <nazwa> Kozaki </nazwa>
+                <cena> 149.99zl </cena>
+            </produkt>
+            <produkt>
+                <nazwa> Obuwie sportowe </nazwa>
+                <cena> 129.99zl </cena>
+            </produkt>
+        </polka>
+    </dzial>
+</sklep>
